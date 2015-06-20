@@ -1,0 +1,55 @@
+.ensiegnant:hover,.salle:hover,.matiere:hover{
+ border: solid 1px #363739;
+     border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+width: 70%;
+color: 000;
+background-color: #eee;
+font-size: 110%;
+
+
+}
+.ensiegnant,.salle,.matiere{
+ border: solid 1px #363739;
+     border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+width: 50%;
+color: 000;
+background-color: #ddd;
+font-size: 120%;
+
+
+}
+.aside{
+	padding-top: 3%;
+	padding: 0.5%;
+
+vertical-align: left;
+margin-top: 2.5%;
+width: 24%;
+background-color: #ccc;
+height: 100%;
+ border: solid 1px #363739;
+     border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+
+}
+.left_content{
+	 border: solid 1px #363739;
+     border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+vertical-align:top; 
+position: absolute;
+height: 100%;
+width: 96%%;
+
+top: 2%;
+left: 2%;
+right: 2%;
+background-color: #bbb;
+color: green;
+}
