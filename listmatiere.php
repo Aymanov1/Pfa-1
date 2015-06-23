@@ -7,7 +7,7 @@ require_once("connexion.php");
           
                     $commande="select * from  matiere";
 
-                      echo "<center><table class='table table-striped table-bordered table-hover'> <th>code</th><th>libellé</th>
+                      echo "<center><div style='width: 800px'><table class='table table-striped table-bordered table-hover'> <th>code</th><th>libellé</th>
                       <th>CI</th>
                       <th>TP</th>
                       <th>niveau</th>
@@ -43,6 +43,6 @@ require_once("connexion.php");
                       </tr></form>';
 
                    }
-                   echo "</table></center>"
+                   echo "</table></div></center>"
 
 ?>

@@ -32,8 +32,8 @@
 					<div class="col-sm-6">
 						<div class="contactinfo">
 							<ul class="nav nav-pills">
-								<li><a href=""><i class="fa fa-phone"></i> 74274862 74274090</a></li>
-								<li><a href="http://www.enis.rnu.tn" target="blank"><i class="fa fa-envelope"></i> www.enis.rnu.tn</a></li>
+								<li><a href=""><i class="fa fa-phone"></i> </a></li>
+								<li><a href=""><i class="fa fa-envelope"></i> www.enis.rnu.tn</a></li>
 							</ul>
 						</div>
 					</div>
@@ -83,16 +83,6 @@
 								<span class="icon-bar"></span>
 							</button>
 						</div>
-						<div class="mainmenu pull-left">
-							<ul class="nav navbar-nav collapse navbar-collapse">
-								<li><a href="enseignement.html">Voeux Enseignements</a></li>
-								<li><a href="voeuxcreneaux.html">Voeux temporelles</a></li>
-								<li><a href="spec_contraintes.html">Specifications des Contraintes</a></li>
-                         
-								
-								<li><a href="contact-us.html">Contact</a></li>
-							</ul>
-						</div>
 <div class="col-sm-3">
 						
 					</div>
@@ -101,72 +91,60 @@
 				
 			</div>
 		</div>
-		</div><!--/header-middle--><?php
-
-session_start();
-echo '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="stylesheet" href="style_admin.css" type="text/css" media="all">';
-require_once("connexion.php");
-$id=$_SESSION['id'];
-$nom =$_SESSION['nom'];
-
-
-$req="select * from  voeux where idprofs='$id' ";
-echo ' <center>
-<center><h2>Les voeux de (Mr/Mme) '.$nom.':</h2><hr></center>
-<table class="table table-striped table-bordered table-hover">
-<th>matiere</th>
-<th>Type</th>
-<th>groupe</th>
-<th>section</th>
-<th>datashow</th>
-<th>jumlage</th>
-<th>journée consecutif</th>
-<th>max horaire par semaine</th>
-<th>max jour</th>
-<th>salle préféré</th>
-<th>chrono</th>
-
-
-';
-$commande=$conn->query($req);
- while ($resultat=$commande->fetch_assoc()){
-                      $matiere=$resultat['matiere'];
-                      $type=$resultat['type_mat'];
-                      $groupe=$resultat['groupe'];
-                        $section=$resultat['section'];
-                        $datashow=$resultat['datashow'];
-                        $jumlage=$resultat['jumlage'];
-                        $journéeCon=$resultat['journee_consecutif'];
-                        $maxh=$resultat['max_horaire_semaine'];
-                         $maxjps=$resultat['max_jour_semaine'];
-                           $salle=$resultat['salle_pref'];
-                             $crenaux=$resultat['voeux_creneaux'];
-                      echo '<form action="choixbtnv.php" method="POST" >
-
-                      <tr>
+		</div><!--/header-middle-->
 	
-                      <td>'.$matiere.'<input type="hidden" name="matiere" value="'.$matiere.'"></td>
-                      <td>'.$type.'<input type="hidden" name="type" value="'.$type.'"></td>
-                      <td>'.$groupe.'<input type="hidden" name="groupe" value="'.$groupe.'"></td>
-                      <td>'.$section.'<input type="hidden" name="section" value="'.$section.'"></td>
-                      <td>'.$datashow.'<input type="hidden" name="datashow" value="'.$datashow.'"></td>
-                      <td>'.$jumlage.'<input type="hidden" name="jumlage" value="'.$jumlage.'"></td>
-                      <td>'.$journéeCon.'<input type="hidden" name="journéeCon" value="'.$journéeCon.'"></td>
-                      <td>'.$maxh.'<input type="hidden" name="maxh" value="'.$maxh.'"></td>
-                      <td>'.$maxjps.'<input type="hidden" name="maxjps" value="'.$maxjps.'"></td>
-                      <td>'.$salle.'<input type="hidden" name="salle" value="'.$salle.'"></td>
-                      <td>'.$crenaux.'<input type="hidden" name="crenaux" value="'.$crenaux.'"></td>
-                      <td><input type="submit"  name="valider" value="valider"></td>
-                      <td><input type="submit" name="modifier" value="modifier"></td>
-                    
-                      </tr></form>';
-
-}
-echo '</table></center>';
+<header>
+	
+</header>
 
 
-?>
+<aside id="content" >
+	<table class="table table-striped table-bordered table-hover">
+		<tr>
+		<th>Enseignant</th>
+		
+		<th >matiere</th>
+		<th>salle</th>
+		</tr>
+
+<tr>
+<td width="35%">
+
+<form action="ajout_enseignant.php">
+<input type="submit" value="ajouter enseignant" ><br><hr>
+</form>
+ <?php require_once("listprof.php");?>
+
+ </td>
+
+ <td width="45%">
+	
+	<form action="saisie_matiere.php">
+<input type="submit" value="ajouter nouvelle matière" ><br><hr>
+</form>
+ <?php require_once("listmatiere.php");?>
+</td>
+
+<td width="25%">
+	
+<form action="ajoutsalle.php">
+<input type="submit" value="ajouter nouvelle salle" ><br><hr>
+</form>
+ <?php require_once("listsalle.php");?>
+
+</td>
+
+
+</tr>	
+
+	</table>
+
+</aside>
+
+<footer>
+	
+</footer>
+
 		<div class="header-bottom"><!--header-bottom-->
 			<div class="container">
 				<div class="row">

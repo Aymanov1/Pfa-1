@@ -49,6 +49,6 @@ $id=$_POST['id'];
   header('Location:voeux_enseignant.php');
 }
 else
-	header('Location:index_admin.php');
+	header('Location:adminEnseignant.php');
 
 ?>

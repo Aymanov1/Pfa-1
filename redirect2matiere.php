@@ -31,7 +31,7 @@
 
 
                  
-                 header('Location: index_admin.php');
+                 header('Location: adminEnseignant.php');
                   
 
                    

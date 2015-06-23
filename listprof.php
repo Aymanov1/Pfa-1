@@ -7,7 +7,7 @@ require_once("connexion.php");
           
                     $commande="select * from  profs ";
 
-                      echo "<center><table class='table table-striped table-bordered table-hover'><th>nom </th><th>grade</th><th>charge horaire</th><th></th><th></th>";
+                      echo "<center><div style='width: 800px'><table class='table table-striped table-bordered table-hover'><th>nom </th><th>grade</th><th>charge horaire</th><th></th><th></th>";
                       $requette=$conn->query($commande);
                       while ($resultat= $requette->fetch_assoc()){
                       $nom_complet_prof=$resultat['nom_complet_prof'];
@@ -26,6 +26,6 @@ require_once("connexion.php");
                       </tr></form>';
 
                    }
-                   echo "</table></center>"
+                   echo "</table></div></center>"
 
 ?>

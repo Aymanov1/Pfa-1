@@ -10,6 +10,6 @@
 						echo "<input type='button' value='back' onclick='history.back()'><br>";
 						die("Delete failed: " . $conn->error);
 					 }
-                      header('location:index_admin.php');
+                      header('location:adminEnseignant.php');
 
 ?>

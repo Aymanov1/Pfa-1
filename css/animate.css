@@ -60,25 +60,25 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 }
 @-webkit-keyframes shake {
 	0%, 100% {-webkit-transform: translateX(0);}
-	10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);}
+	10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-20px);}
 	20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);}
 }
 
 @-moz-keyframes shake {
 	0%, 100% {-moz-transform: translateX(0);}
-	10%, 30%, 50%, 70%, 90% {-moz-transform: translateX(-10px);}
+	10%, 30%, 50%, 70%, 90% {-moz-transform: translateX(-20px);}
 	20%, 40%, 60%, 80% {-moz-transform: translateX(10px);}
 }
 
 @-o-keyframes shake {
 	0%, 100% {-o-transform: translateX(0);}
-	10%, 30%, 50%, 70%, 90% {-o-transform: translateX(-10px);}
+	10%, 30%, 50%, 70%, 90% {-o-transform: translateX(-20px);}
 	20%, 40%, 60%, 80% {-o-transform: translateX(10px);}
 }
 
 @keyframes shake {
 	0%, 100% {transform: translateX(0);}
-	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+	10%, 30%, 50%, 70%, 90% {transform: translateX(-20px);}
 	20%, 40%, 60%, 80% {transform: translateX(10px);}
 }
 
@@ -91,24 +91,24 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 @-webkit-keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
 	40% {-webkit-transform: translateY(-30px);}
-	60% {-webkit-transform: translateY(-15px);}
+	60% {-webkit-transform: translateY(-25px);}
 }
 
 @-moz-keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
 	40% {-moz-transform: translateY(-30px);}
-	60% {-moz-transform: translateY(-15px);}
+	60% {-moz-transform: translateY(-25px);}
 }
 
 @-o-keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
 	40% {-o-transform: translateY(-30px);}
-	60% {-o-transform: translateY(-15px);}
+	60% {-o-transform: translateY(-25px);}
 }
 @keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
 	40% {transform: translateY(-30px);}
-	60% {transform: translateY(-15px);}
+	60% {transform: translateY(-25px);}
 }
 
 .animated.bounce {
@@ -158,7 +158,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 @-webkit-keyframes swing {
 	20%, 40%, 60%, 80%, 100% { -webkit-transform-origin: top center; }
 	20% { -webkit-transform: rotate(15deg); }	
-	40% { -webkit-transform: rotate(-10deg); }
+	40% { -webkit-transform: rotate(-20deg); }
 	60% { -webkit-transform: rotate(5deg); }	
 	80% { -webkit-transform: rotate(-5deg); }	
 	100% { -webkit-transform: rotate(0deg); }
@@ -166,7 +166,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 
 @-moz-keyframes swing {
 	20% { -moz-transform: rotate(15deg); }	
-	40% { -moz-transform: rotate(-10deg); }
+	40% { -moz-transform: rotate(-20deg); }
 	60% { -moz-transform: rotate(5deg); }	
 	80% { -moz-transform: rotate(-5deg); }	
 	100% { -moz-transform: rotate(0deg); }
@@ -174,7 +174,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 
 @-o-keyframes swing {
 	20% { -o-transform: rotate(15deg); }	
-	40% { -o-transform: rotate(-10deg); }
+	40% { -o-transform: rotate(-20deg); }
 	60% { -o-transform: rotate(5deg); }	
 	80% { -o-transform: rotate(-5deg); }	
 	100% { -o-transform: rotate(0deg); }
@@ -182,7 +182,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 
 @keyframes swing {
 	20% { transform: rotate(15deg); }	
-	40% { transform: rotate(-10deg); }
+	40% { transform: rotate(-20deg); }
 	60% { transform: rotate(5deg); }	
 	80% { transform: rotate(-5deg); }	
 	100% { transform: rotate(0deg); }
@@ -204,9 +204,9 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
   0% { -webkit-transform: translateX(0%); }
   15% { -webkit-transform: translateX(-25%) rotate(-5deg); }
   30% { -webkit-transform: translateX(20%) rotate(3deg); }
-  45% { -webkit-transform: translateX(-15%) rotate(-3deg); }
+  45% { -webkit-transform: translateX(-25%) rotate(-3deg); }
   60% { -webkit-transform: translateX(10%) rotate(2deg); }
-  75% { -webkit-transform: translateX(-5%) rotate(-1deg); }
+  75% { -webkit-transform: translateX(-5%) rotate(-2deg); }
   100% { -webkit-transform: translateX(0%); }
 }
 
@@ -214,9 +214,9 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
   0% { -moz-transform: translateX(0%); }
   15% { -moz-transform: translateX(-25%) rotate(-5deg); }
   30% { -moz-transform: translateX(20%) rotate(3deg); }
-  45% { -moz-transform: translateX(-15%) rotate(-3deg); }
+  45% { -moz-transform: translateX(-25%) rotate(-3deg); }
   60% { -moz-transform: translateX(10%) rotate(2deg); }
-  75% { -moz-transform: translateX(-5%) rotate(-1deg); }
+  75% { -moz-transform: translateX(-5%) rotate(-2deg); }
   100% { -moz-transform: translateX(0%); }
 }
 
@@ -224,9 +224,9 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
   0% { -o-transform: translateX(0%); }
   15% { -o-transform: translateX(-25%) rotate(-5deg); }
   30% { -o-transform: translateX(20%) rotate(3deg); }
-  45% { -o-transform: translateX(-15%) rotate(-3deg); }
+  45% { -o-transform: translateX(-25%) rotate(-3deg); }
   60% { -o-transform: translateX(10%) rotate(2deg); }
-  75% { -o-transform: translateX(-5%) rotate(-1deg); }
+  75% { -o-transform: translateX(-5%) rotate(-2deg); }
   100% { -o-transform: translateX(0%); }
 }
 
@@ -234,9 +234,9 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
   0% { transform: translateX(0%); }
   15% { transform: translateX(-25%) rotate(-5deg); }
   30% { transform: translateX(20%) rotate(3deg); }
-  45% { transform: translateX(-15%) rotate(-3deg); }
+  45% { transform: translateX(-25%) rotate(-3deg); }
   60% { transform: translateX(10%) rotate(2deg); }
-  75% { transform: translateX(-5%) rotate(-1deg); }
+  75% { transform: translateX(-5%) rotate(-2deg); }
   100% { transform: translateX(0%); }
 }
 
@@ -381,7 +381,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
     }
     
     40% {
-        -webkit-transform: perspective(400px) rotateX(-10deg);
+        -webkit-transform: perspective(400px) rotateX(-20deg);
     }
     
     70% {
@@ -400,7 +400,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
     }
     
     40% {
-        -moz-transform: perspective(400px) rotateX(-10deg);
+        -moz-transform: perspective(400px) rotateX(-20deg);
     }
     
     70% {
@@ -419,7 +419,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
     }
     
     40% {
-        -o-transform: perspective(400px) rotateX(-10deg);
+        -o-transform: perspective(400px) rotateX(-20deg);
     }
     
     70% {
@@ -438,7 +438,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
     }
     
     40% {
-        transform: perspective(400px) rotateX(-10deg);
+        transform: perspective(400px) rotateX(-20deg);
     }
     
     70% {
@@ -522,7 +522,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
     }
     
     40% {
-        -webkit-transform: perspective(400px) rotateY(-10deg);
+        -webkit-transform: perspective(400px) rotateY(-20deg);
     }
     
     70% {
@@ -541,7 +541,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
     }
     
     40% {
-        -moz-transform: perspective(400px) rotateY(-10deg);
+        -moz-transform: perspective(400px) rotateY(-20deg);
     }
     
     70% {
@@ -560,7 +560,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
     }
     
     40% {
-        -o-transform: perspective(400px) rotateY(-10deg);
+        -o-transform: perspective(400px) rotateY(-20deg);
     }
     
     70% {
@@ -579,7 +579,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
     }
     
     40% {
-        transform: perspective(400px) rotateY(-10deg);
+        transform: perspective(400px) rotateY(-20deg);
     }
     
     70% {
@@ -1743,7 +1743,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	}
 	
 	80% {
-		-webkit-transform: translateY(-10px);
+		-webkit-transform: translateY(-20px);
 	}
 	
 	100% {
@@ -1763,7 +1763,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	}
 	
 	80% {
-		-moz-transform: translateY(-10px);
+		-moz-transform: translateY(-20px);
 	}
 	
 	100% {
@@ -1783,7 +1783,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	}
 	
 	80% {
-		-o-transform: translateY(-10px);
+		-o-transform: translateY(-20px);
 	}
 	
 	100% {
@@ -1803,7 +1803,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	}
 	
 	80% {
-		transform: translateY(-10px);
+		transform: translateY(-20px);
 	}
 	
 	100% {
@@ -1829,7 +1829,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	}
 	
 	80% {
-		-webkit-transform: translateX(-10px);
+		-webkit-transform: translateX(-20px);
 	}
 	
 	100% {
@@ -1849,7 +1849,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	}
 	
 	80% {
-		-moz-transform: translateX(-10px);
+		-moz-transform: translateX(-20px);
 	}
 	
 	100% {
@@ -1869,7 +1869,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	}
 	
 	80% {
-		-o-transform: translateX(-10px);
+		-o-transform: translateX(-20px);
 	}
 	
 	100% {
@@ -1889,7 +1889,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	}
 	
 	80% {
-		transform: translateX(-10px);
+		transform: translateX(-20px);
 	}
 	
 	100% {
@@ -3013,22 +3013,22 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @-webkit-keyframes rollIn {
-	0% { opacity: 0; -webkit-transform: translateX(-100%) rotate(-120deg); }
+	0% { opacity: 0; -webkit-transform: translateX(-200%) rotate(-220deg); }
 	100% { opacity: 1; -webkit-transform: translateX(0px) rotate(0deg); }
 }
 
 @-moz-keyframes rollIn {
-	0% { opacity: 0; -moz-transform: translateX(-100%) rotate(-120deg); }
+	0% { opacity: 0; -moz-transform: translateX(-200%) rotate(-220deg); }
 	100% { opacity: 1; -moz-transform: translateX(0px) rotate(0deg); }
 }
 
 @-o-keyframes rollIn {
-	0% { opacity: 0; -o-transform: translateX(-100%) rotate(-120deg); }
+	0% { opacity: 0; -o-transform: translateX(-200%) rotate(-220deg); }
 	100% { opacity: 1; -o-transform: translateX(0px) rotate(0deg); }
 }
 
 @keyframes rollIn {
-	0% { opacity: 0; transform: translateX(-100%) rotate(-120deg); }
+	0% { opacity: 0; transform: translateX(-200%) rotate(-220deg); }
 	100% { opacity: 1; transform: translateX(0px) rotate(0deg); }
 }
 
@@ -3100,28 +3100,28 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 @-webkit-keyframes lightSpeedIn {
 	0% { -webkit-transform: translateX(100%) skewX(-30deg); opacity: 0; }
 	60% { -webkit-transform: translateX(-20%) skewX(30deg); opacity: 1; }
-	80% { -webkit-transform: translateX(0%) skewX(-15deg); opacity: 1; }
+	80% { -webkit-transform: translateX(0%) skewX(-25deg); opacity: 1; }
 	100% { -webkit-transform: translateX(0%) skewX(0deg); opacity: 1; }
 }
 
 @-moz-keyframes lightSpeedIn {
 	0% { -moz-transform: translateX(100%) skewX(-30deg); opacity: 0; }
 	60% { -moz-transform: translateX(-20%) skewX(30deg); opacity: 1; }
-	80% { -moz-transform: translateX(0%) skewX(-15deg); opacity: 1; }
+	80% { -moz-transform: translateX(0%) skewX(-25deg); opacity: 1; }
 	100% { -moz-transform: translateX(0%) skewX(0deg); opacity: 1; }
 }
 
 @-o-keyframes lightSpeedIn {
 	0% { -o-transform: translateX(100%) skewX(-30deg); opacity: 0; }
 	60% { -o-transform: translateX(-20%) skewX(30deg); opacity: 1; }
-	80% { -o-transform: translateX(0%) skewX(-15deg); opacity: 1; }
+	80% { -o-transform: translateX(0%) skewX(-25deg); opacity: 1; }
 	100% { -o-transform: translateX(0%) skewX(0deg); opacity: 1; }
 }
 
 @keyframes lightSpeedIn {
 	0% { transform: translateX(100%) skewX(-30deg); opacity: 0; }
 	60% { transform: translateX(-20%) skewX(30deg); opacity: 1; }
-	80% { transform: translateX(0%) skewX(-15deg); opacity: 1; }
+	80% { transform: translateX(0%) skewX(-25deg); opacity: 1; }
 	100% { transform: translateX(0%) skewX(0deg); opacity: 1; }
 }
 

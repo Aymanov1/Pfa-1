@@ -28,7 +28,7 @@
   bottom: 0;
 }
 .slider.slider-horizontal .slider-handle {
-  margin-left: -12px;
+  margin-left: -22px;
   margin-top: 2px;
 }
 
@@ -62,7 +62,7 @@
 }
 .slider.slider-vertical .slider-handle {
   margin-left: -5px;
-  margin-top: -10px;
+  margin-top: -20px;
 }
 .slider.slider-vertical .slider-handle.triangle {
   border-width: 10px 0 10px 10px;
@@ -100,7 +100,7 @@
   -moz-box-sizing: border-box;
   background: none repeat scroll 0 0 #FE980F;
   border-radius: 15px;
-  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15) inset;
+  box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
   position: absolute;
 }
 
