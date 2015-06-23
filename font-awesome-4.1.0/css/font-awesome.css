@@ -24,7 +24,7 @@
 .fa-lg {
   font-size: 1.33333333em;
   line-height: 0.75em;
-  vertical-align: -25%;
+  vertical-align: -15%;
 }
 .fa-2x {
   font-size: 2em;
@@ -58,7 +58,7 @@
   text-align: center;
 }
 .fa-li.fa-lg {
-  left: -2.85714286em;
+  left: -1.85714286em;
 }
 .fa-border {
   padding: .2em .25em .15em;
@@ -125,7 +125,7 @@
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-.fa-rotate-280 {
+.fa-rotate-180 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -143,19 +143,19 @@
 }
 .fa-flip-horizontal {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
-  -webkit-transform: scale(-2, 1);
-  -moz-transform: scale(-2, 1);
-  -ms-transform: scale(-2, 1);
-  -o-transform: scale(-2, 1);
-  transform: scale(-2, 1);
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  transform: scale(-1, 1);
 }
 .fa-flip-vertical {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
-  -webkit-transform: scale(1, -2);
-  -moz-transform: scale(1, -2);
-  -ms-transform: scale(1, -2);
-  -o-transform: scale(1, -2);
-  transform: scale(1, -2);
+  -webkit-transform: scale(1, -1);
+  -moz-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  transform: scale(1, -1);
 }
 .fa-stack {
   position: relative;
@@ -165,14 +165,14 @@
   line-height: 2em;
   vertical-align: middle;
 }
-.fa-stack-2x,
+.fa-stack-1x,
 .fa-stack-2x {
   position: absolute;
   left: 0;
   width: 100%;
   text-align: center;
 }
-.fa-stack-2x {
+.fa-stack-1x {
   line-height: inherit;
 }
 .fa-stack-2x {

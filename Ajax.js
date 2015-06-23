@@ -15,11 +15,11 @@ function CreateXHR()
     {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
                 {
-                    if (xmlhttp.responseText === 'true2') {
+                    if (xmlhttp.responseText == 'true2') {
                         document.getElementById('user').style.borderColor = "";
                         document.getElementById('password').style.borderColor = "";
                         window.open("enseignement.php","_self");
-                    } else if(xmlhttp.responseText === 'true1'){
+                    } else if(xmlhttp.responseText == 'true1'){
                         document.getElementById('user').style.borderColor = "";
                         document.getElementById('password').style.borderColor = "";
                         window.open("adminEnsiegnant.php","_self");

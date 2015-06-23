@@ -11,24 +11,7 @@
                       $niveau=$_SESSION['niveau'];
                       $section=$_SESSION['section'];
                 echo '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="stylesheet" href="style_admin.css" type="text/css" media="all">';     
-                
-               if(!empty($_POST)){
-	                  $code1=$_POST['code'];
-                      $libelle=$_POST['libelle'];
-                      $CI=$_POST['CI'];
-                      $TP=$_POST['TP'];
-                      $niveau=$_POST['niveau'];
-                      $simestre=$_POST['simestre'];
-                      $section=$_POST['section'];
-	           
-	            $commande="UPDATE  matiere set code_mat=$code1 ,libelle='$libelle' ,CI=$CI,TP=$TP ,niveau_mat='$niveau',
-
-	            section_mat='$section',semestre_mat=$simestre WHERE code_mat=$code";
-	              $res=$conn->query($commande) or die("ressayer une autre fois") ;
-                     header("location:javascript://history.go(-2)");
-                  }
-
+<link rel="stylesheet" href="style_admin.css" type="text/css" media="all">';      
                       ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -50,8 +33,8 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->       
     <link rel="shortcut icon" href="images/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-244-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-214-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 </head><!--/head-->
@@ -115,6 +98,16 @@
 								<span class="icon-bar"></span>
 							</button>
 						</div>
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li><a href="voeuxcreneaux.html">Voeux temporelles</a></li>
+								<li><a href="enseignement.html">Voeux Enseignements</a></li>
+								<li><a href="spec_contraintes.html">Specifications des Contraintes</a></li>
+                         
+								
+								<li><a href="contact-us.html">Contact</a></li>
+							</ul>
+						</div>
 <div class="col-sm-3">
 						
 					</div>
@@ -167,6 +160,25 @@
 		<input type="reset" value="annuler" ><input type="submit" value="Valider">
 
 	</form></div></center>
+	<?php
+
+               if(!empty($_POST)){
+	                  $code1=$_POST['code'];
+                      $libelle=$_POST['libelle'];
+                      $CI=$_POST['CI'];
+                      $TP=$_POST['TP'];
+                      $niveau=$_POST['niveau'];
+                      $simestre=$_POST['simestre'];
+                      $section=$_POST['section'];
+	           
+	            $commande="UPDATE  matiere set code_mat='$code1' ,libelle='$libelle' ,CI='$CI',TP='$TP' ,niveau_mat='$niveau',
+
+	            section_mat='$section',semestre_mat='$simestre' WHERE code_mat='$code'";
+	              $res=$conn->query($commande) or die("ressayer une autre fois") ;
+                     header('location:index_admin.php');
+                  }
+
+?>
 		<div class="header-bottom"><!--header-bottom-->
 			<div class="container">
 				<div class="row">

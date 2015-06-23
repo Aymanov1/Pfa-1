@@ -66,6 +66,6 @@ if( isset($_POST['modifier'])){
 
 }
 else
-	header('Location:adminEnseignant.php');
+	header('Location:index_admin.php');
 
 ?>

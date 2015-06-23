@@ -7,7 +7,7 @@ require_once("connexion.php");
           
                     $commande="select * from  salle";
 
-                      echo "<center><div style='width: 800px'><table class='table table-striped table-bordered table-hover'> <th>num salle</th><th>Type  salle</th><th></th><th></th>";
+                      echo "<center><table class='table table-striped table-bordered table-hover'> <th>num salle</th><th>Type  salle</th><th></th><th></th>";
                       $requette=$conn->query($commande);
                       while ($resultat= $requette->fetch_assoc()){
                       $num_salle=$resultat['num_salle'];
@@ -26,6 +26,6 @@ require_once("connexion.php");
                       </tr></form>';
 
                    }
-                   echo "</table></div></center>"
+                   echo "</table></center>"
 
 ?>

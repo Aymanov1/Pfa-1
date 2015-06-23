@@ -11,7 +11,7 @@
     bottom: 0;
     left: 50%;
     width: 3px;
-    margin-left: -2.5px;
+    margin-left: -1.5px;
     background-color: #eeeeee;
 }
 
@@ -56,7 +56,7 @@
     display: inline-block;
     position: absolute;
     top: 26px;
-    right: -25px;
+    right: -15px;
     border-top: 15px solid transparent;
     border-right: 0 solid #ccc;
     border-bottom: 15px solid transparent;
@@ -68,7 +68,7 @@
     display: inline-block;
     position: absolute;
     top: 27px;
-    right: -24px;
+    right: -14px;
     border-top: 14px solid transparent;
     border-right: 0 solid #fff;
     border-bottom: 14px solid transparent;
@@ -97,14 +97,14 @@
 
 .timeline > li.timeline-inverted > .timeline-panel:before {
     right: auto;
-    left: -25px;
+    left: -15px;
     border-right-width: 15px;
     border-left-width: 0;
 }
 
 .timeline > li.timeline-inverted > .timeline-panel:after {
     right: auto;
-    left: -24px;
+    left: -14px;
     border-right-width: 14px;
     border-left-width: 0;
 }
@@ -166,14 +166,14 @@
 
     ul.timeline > li > .timeline-panel:before {
         right: auto;
-        left: -25px;
+        left: -15px;
         border-right-width: 15px;
         border-left-width: 0;
     }
 
     ul.timeline > li > .timeline-panel:after {
         right: auto;
-        left: -24px;
+        left: -14px;
         border-right-width: 14px;
         border-left-width: 0;
     }
